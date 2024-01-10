@@ -142,7 +142,7 @@ const generateApi = (className: string, classPtr: NativePointer = ptr(0)) => {
     // @cache
     // static get _CancelInvoke() {
     //     // CancelInvoke() : Void
-    //     return Il2Cpp.Api.t("UnityEngine.CoreModule", "UnityEngine.MonoBehaviour", "CancelInvoke", 0, "void", ["pointer"]);
+    //     return Il2CppHook.t("UnityEngine.CoreModule", "UnityEngine.MonoBehaviour", "CancelInvoke", 0, "void", ["pointer"]);
     // }
 
     // gen methods
@@ -173,12 +173,12 @@ const generateApi = (className: string, classPtr: NativePointer = ptr(0)) => {
         else retName = 'pointer'
         let classNameSpace = method.class.namespace.length == 0 ? "" : `${method.class.namespace}.`
         if (false && !names.includes(method.name)) {
-            LOGD(`\t\treturn Il2Cpp.Api.t("${method.class.image.assembly.name}", "${classNameSpace}${className}", "${method.name}", ${method.parameters.length}, "${retName}", ${param})`)
+            LOGD(`\t\treturn Il2CppHook.t("${method.class.image.assembly.name}", "${classNameSpace}${className}", "${method.name}", ${method.parameters.length}, "${retName}", ${param})`)
         } else {
             // 重名函数
-            // return Il2Cpp.Api.o("UnityEngine.CoreModule", "UnityEngine.MonoBehaviour", "StartCoroutine", 1, ["System.Collections.IEnumerator"], "pointer", ["pointer", "pointer"]);
+            // return Il2CppHook.o("UnityEngine.CoreModule", "UnityEngine.MonoBehaviour", "StartCoroutine", 1, ["System.Collections.IEnumerator"], "pointer", ["pointer", "pointer"]);
             let paramTypes = `[${method.parameters.map((param: Il2Cpp.Parameter) => `"${param.type.name}"`).join(',')}]`
-            LOGD(`\t\treturn Il2Cpp.Api.o("${method.class.image.assembly.name}", "${classNameSpace}${className}", "${method.name}", ${method.parameters.length}, ${paramTypes}, "${retName}", ${param})`)
+            LOGD(`\t\treturn Il2CppHook.o("${method.class.image.assembly.name}", "${classNameSpace}${className}", "${method.name}", ${method.parameters.length}, ${paramTypes}, "${retName}", ${param})`)
         }
         LOGD('\t}\n')
 

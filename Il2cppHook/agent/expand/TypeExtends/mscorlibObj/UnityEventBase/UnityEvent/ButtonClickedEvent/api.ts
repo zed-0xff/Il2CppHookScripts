@@ -4,7 +4,7 @@ class UnityEngine_UI_Button_ButtonClickedEvent_API {
     // public Void .ctor()
     @cache
     static get __ctor() {
-        return Il2Cpp.Api.o("UnityEngine.UI", "ButtonClickedEvent", ".ctor", 0, [], "void", ["pointer"])
+        return Il2CppHook.o("UnityEngine.UI", "ButtonClickedEvent", ".ctor", 0, [], "void", ["pointer"])
     }
 
 }

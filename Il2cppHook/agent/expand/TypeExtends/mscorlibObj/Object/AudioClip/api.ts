@@ -4,25 +4,25 @@ class UnityEngine_AudioClip_API {
     // private Void .ctor()
     @cache
     static get __ctor() {
-        return Il2Cpp.Api.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", ".ctor", 0, [], "void", ["pointer"])
+        return Il2CppHook.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", ".ctor", 0, [], "void", ["pointer"])
     }
 
     // public Single get_length()
     @cache
     static get _get_length() {
-        return Il2Cpp.Api.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", "get_length", 0, [], "pointer", ["pointer"])
+        return Il2CppHook.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", "get_length", 0, [], "pointer", ["pointer"])
     }
 
     // private Void InvokePCMReaderCallback_Internal(Single[] data)
     @cache
     static get _InvokePCMReaderCallback_Internal() {
-        return Il2Cpp.Api.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", "InvokePCMReaderCallback_Internal", 1, ["System.Single[]"], "void", ["pointer", "pointer"])
+        return Il2CppHook.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", "InvokePCMReaderCallback_Internal", 1, ["System.Single[]"], "void", ["pointer", "pointer"])
     }
 
     // private Void InvokePCMSetPositionCallback_Internal(Int32 position)
     @cache
     static get _InvokePCMSetPositionCallback_Internal() {
-        return Il2Cpp.Api.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", "InvokePCMSetPositionCallback_Internal", 1, ["System.Int32"], "void", ["pointer", "pointer"])
+        return Il2CppHook.o("UnityEngine.AudioModule", "UnityEngine.AudioClip", "InvokePCMSetPositionCallback_Internal", 1, ["System.Int32"], "void", ["pointer", "pointer"])
     }
 
 }

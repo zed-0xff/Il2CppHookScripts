@@ -4,7 +4,7 @@ class UnityEngine_SceneManagement_LoadSceneParameters_API {
     // public Void .ctor(LoadSceneMode mode)
     @cache
     static get __ctor() {
-        return Il2Cpp.Api.t("UnityEngine.CoreModule", "UnityEngine.SceneManagement.LoadSceneParameters", ".ctor", 1, "void", ["pointer", "pointer"])
+        return Il2CppHook.t("UnityEngine.CoreModule", "UnityEngine.SceneManagement.LoadSceneParameters", ".ctor", 1, "void", ["pointer", "pointer"])
     }
 }
 

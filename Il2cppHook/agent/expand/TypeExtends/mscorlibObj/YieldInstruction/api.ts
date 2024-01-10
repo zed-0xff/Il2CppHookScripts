@@ -4,7 +4,7 @@ class UnityEngine_YieldInstruction_API {
     // public Void .ctor()
     @cache
     static get __ctor() {
-        return Il2Cpp.Api.t("UnityEngine.CoreModule", "UnityEngine.YieldInstruction", ".ctor", 0, "void", ["pointer"])
+        return Il2CppHook.t("UnityEngine.CoreModule", "UnityEngine.YieldInstruction", ".ctor", 0, "void", ["pointer"])
     }
 
 }

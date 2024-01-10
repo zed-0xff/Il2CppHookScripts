@@ -4,7 +4,7 @@ class UnityEngine_MeshRenderer_API {
     // private Void DontStripMeshRenderer()
     @cache
     static get _DontStripMeshRenderer() {
-        return Il2Cpp.Api.t("UnityEngine.CoreModule", "UnityEngine.MeshRenderer", "DontStripMeshRenderer", 0, "void", ["pointer"])
+        return Il2CppHook.t("UnityEngine.CoreModule", "UnityEngine.MeshRenderer", "DontStripMeshRenderer", 0, "void", ["pointer"])
     }
 }
 

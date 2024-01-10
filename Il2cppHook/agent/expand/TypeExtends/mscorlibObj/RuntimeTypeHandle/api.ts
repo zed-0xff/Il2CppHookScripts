@@ -5,7 +5,7 @@ class mscorlibRuntimeTypeHandleAPI {
 
     // @cache
     // static get _ctor_0() {
-    //     return Il2Cpp.Api.t("mscorlib", "System.Object", ".ctor", 0, "pointer", ["pointer"]);
+    //     return Il2CppHook.t("mscorlib", "System.Object", ".ctor", 0, "pointer", ["pointer"]);
     // }
 
 }

@@ -4,31 +4,31 @@ class _MainModule_API {
     // internal Void .ctor(ParticleSystem particleSystem)
     @cache
     static get __ctor() {
-        return Il2Cpp.Api.t("UnityEngine.ParticleSystemModule", "MainModule", ".ctor", 1, "void", ["pointer", "pointer"])
+        return Il2CppHook.t("UnityEngine.ParticleSystemModule", "MainModule", ".ctor", 1, "void", ["pointer", "pointer"])
     }
 
     // public MinMaxGradient get_startColor()
     @cache
     static get _get_startColor() {
-        return Il2Cpp.Api.t("UnityEngine.ParticleSystemModule", "MainModule", "get_startColor", 0, "pointer", ["pointer"])
+        return Il2CppHook.t("UnityEngine.ParticleSystemModule", "MainModule", "get_startColor", 0, "pointer", ["pointer"])
     }
 
     // public Void set_startColor(MinMaxGradient value)
     @cache
     static get _set_startColor() {
-        return Il2Cpp.Api.t("UnityEngine.ParticleSystemModule", "MainModule", "set_startColor", 1, "void", ["pointer", "pointer"])
+        return Il2CppHook.t("UnityEngine.ParticleSystemModule", "MainModule", "set_startColor", 1, "void", ["pointer", "pointer"])
     }
 
     // private static Void get_startColor_Injected(MainModule& _unity_self,MinMaxGradient& ret)
     @cache
     static get _get_startColor_Injected() {
-        return Il2Cpp.Api.t("UnityEngine.ParticleSystemModule", "MainModule", "get_startColor_Injected", 2, "void", ["pointer", "pointer"])
+        return Il2CppHook.t("UnityEngine.ParticleSystemModule", "MainModule", "get_startColor_Injected", 2, "void", ["pointer", "pointer"])
     }
 
     // private static Void set_startColor_Injected(MainModule& _unity_self,MinMaxGradient& value)
     @cache
     static get _set_startColor_Injected() {
-        return Il2Cpp.Api.t("UnityEngine.ParticleSystemModule", "MainModule", "set_startColor_Injected", 2, "void", ["pointer", "pointer"])
+        return Il2CppHook.t("UnityEngine.ParticleSystemModule", "MainModule", "set_startColor_Injected", 2, "void", ["pointer", "pointer"])
     }
 
 }

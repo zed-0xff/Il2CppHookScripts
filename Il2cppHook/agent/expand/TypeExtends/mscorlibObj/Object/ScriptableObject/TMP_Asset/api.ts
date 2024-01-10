@@ -4,13 +4,13 @@ class TMPro_TMP_Asset_API {
     // public Int32 get_instanceID()
     @cache
     static get _get_instanceID() {
-        return Il2Cpp.Api.o("Unity.TextMeshPro", "TMPro.TMP_Asset", "get_instanceID", 0, [], "pointer", ["pointer"])
+        return Il2CppHook.o("Unity.TextMeshPro", "TMPro.TMP_Asset", "get_instanceID", 0, [], "pointer", ["pointer"])
     }
 
     // protected Void .ctor()
     @cache
     static get __ctor() {
-        return Il2Cpp.Api.o("Unity.TextMeshPro", "TMPro.TMP_Asset", ".ctor", 0, [], "void", ["pointer"])
+        return Il2CppHook.o("Unity.TextMeshPro", "TMPro.TMP_Asset", ".ctor", 0, [], "void", ["pointer"])
     }
 
 }
