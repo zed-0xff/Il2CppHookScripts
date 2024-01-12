@@ -218,7 +218,7 @@ function fixMoreVerison() {
     const UnityVersion = "2020.3.0f1c1"
 
     Il2Cpp.perform(() => {
-        if (Il2Cpp.Api.resolveInternalCall(allocCStr('UnityEngine.Application::get_unityVersion')).isNull()) {
+        if (Il2Cpp.api.resolveInternalCall(allocCStr('UnityEngine.Application::get_unityVersion')).isNull()) {
             LOGW(`Couldn't determine the Unity version, Schedule set to ${UnityVersion}`)
             setTimeout(() => {
                 if (Reflect.has(Il2Cpp, "unityVersion")) {
@@ -236,8 +236,8 @@ function fixMoreVerison() {
     // {
     //     Il2Cpp.perform(() => {
     //         setTimeout(() => {
-    //             if (Il2Cpp.Api.resolveInternalCall(allocCStr('UnityEngine.Application::get_unityVersion')).isNull()) {
-    //                 A(Il2Cpp.Api.resolveInternalCall, (args: InvocationArguments, _ctx: CpuContext, passValue: Map<PassType, any>) => {
+    //             if (Il2Cpp.api.resolveInternalCall(allocCStr('UnityEngine.Application::get_unityVersion')).isNull()) {
+    //                 A(Il2Cpp.api.resolveInternalCall, (args: InvocationArguments, _ctx: CpuContext, passValue: Map<PassType, any>) => {
     //                     if (args[0].readCString() == 'UnityEngine.Application::get_unityVersion') {
     //                         passValue.set("RET", allocCStr(UnityVersion))
     //                         LOGE(`Can't get UnityVersion, set to ${UnityVersion}`)
@@ -273,7 +273,7 @@ function fixMoreVerison() {
 //             return local_offset
 //         }
 //     })
-//     A(Il2Cpp.Api.fieldGetOffset, undefined, (ret) => {
+//     A(Il2Cpp.api.fieldGetOffset, undefined, (ret) => {
 //         let local_offset: number = ret.toInt32()
 //         if (local_offset < 0) return -1
 //         if (Process.arch == "arm") local_offset = local_offset - 8
